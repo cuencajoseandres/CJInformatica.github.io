@@ -1,0 +1,33 @@
+/*RESPONSIVE*/
+@media (max-width: 1250px) {
+    .wrap{
+        width: 90%;
+        margin: 0px auto;
+    }
+    
+    .card{
+        width: 16.5%;
+        margin: 1.655%;
+    }
+}
+
+@media (max-width: 1114px) {
+    .card{
+        width: 16%;
+        margin: 1.805%;
+    }
+}
+
+@media (max-width: 554px) {
+    .card{
+        width: 15%;
+        margin: 1.805%;
+    }
+}
+
+@media (max-width: 554px) {
+    .card{
+        width: 15%;
+        margin: 1.805%;
+    }
+}

@@ -50,11 +50,11 @@ const displayProductItems = items => {
                       <div class="product__price">
                         <h4>$${product.price}</h4>
                       </div>
-                      <a href="#"><button type="submit" class="product__btn">AÑADIR AL CARRITO</button></a>
+                      <a href="cart.html"><button type="submit" class="product__btn">AÑADIR AL CARRITO</button></a>
                     </div>
                   <ul>
                       <li>
-                        <a data-tip="Quick View" data-place="left" href="#">
+                        <a data-tip="Quick View" data-place="left" href="product.html">
                           <svg>
                             <use xlink:href="./images/sprite.svg#icon-eye"></use>
                           </svg>

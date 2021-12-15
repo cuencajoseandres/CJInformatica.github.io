@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="./images/logo/logo-CJ-Blanco-SinFondo.png" type="image/x-icon" />
+
+    <!-- Carousel -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css" />
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css" />
+
+    <!-- Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Tienda CJ Informática</title>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="navigation">
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav__hamburger">
+                        <!-- <svg>
+                            <use xlink:href="./images/sprite.svg#icon-menu"></use>
+                        </svg> -->
+                        <i class="fas fa-bars"></i>
+                    </div>
+
+                    <div class="nav__logo">
+                        <a href="index.html">
+                            <img src="images/logo/logo-CJ-Blanco-SinFondo.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="nav__menu">
+                        <div class="menu__top">
+                            <span class="nav__category">CJ INFORMATICA</span>
+                            <a href="#" class="close__toggle">
+                                <!-- <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-cross"></use>
+                                </svg> -->
+                                <i class="far fa-times-circle"></i>
+                            </a>
+                        </div>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="index.html" class="nav__link">Inicio</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link scroll-link">ofertas</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link scroll-link">categoria</a>
+                            </li>
+                            <!-- <li class="nav__item">
+                                <a href="#" class="nav__link scroll-link">faboritos</a>
+                            </li> -->
+                        </ul>
+                    </div>
+
+                    <div class="nav__icons">
+
+                        <a href="#" class="icon__item">
+                            <!-- <svg class="icon__user">
+                              <use xlink:href="./images/sprite.svg#icon-user"></use>
+                            </svg> -->
+                            <i class="fas fa-user"></i>
+
+                        </a>
+
+                        <a href="#" class="icon__item">
+                            <!-- <svg class="icon__search">
+                              <use xlink:href="./images/sprite.svg#icon-search"></use>
+                            </svg> -->
+                            <i class="far fa-search"></i>
+                        </a>
+
+                        <a href="cart.html" class="icon__item">
+                            <!-- <svg class="icon__cart">
+                              <use xlink:href="./images/sprite.svg#icon-shopping-basket"></use>
+                            </svg> -->
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cart__total">10</span>
+                        </a>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="page__title-area">
+            <div class="container">
+                <div class="page__title-container">
+                    <ul class="page__titles">
+                        <li>
+                            <a href="index.html">
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-home"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="page__title">Carro</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="section cart__area">
+            <div class="container">
+                <div class="responsive__cart-area">
+                    <form class="cart__form">
+                        <div class="cart__table table-responsive">
+                            <table width="100%" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>PRODUCTO</th>
+                                        <th>NOMBRE</th>
+                                        <th>PRECIO UNITARIO</th>
+                                        <th>CANTIDAD</th>
+                                        <th>SUB TOTAL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="product__thumbnail">
+                                            <a href="#">
+                                                <img src="./images/pcgamer.png" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product__name">
+                                            <a href="#">pc gamer</a>
+                                            <br><br>
+                                            <small>White/6.25</small>
+                                        </td>
+                                        <td class="product__price">
+                                            <div class="price">
+                                                <span class="new__price">$40.000</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                        <svg>
+                                                            <use xlink:href="./images/sprite.svg#icon-minus"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                        <svg>
+                                                            <use xlink:href="./images/sprite.svg#icon-plus"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product__subtotal">
+                                            <div class="price">
+                                                <span class="new__price">$40.000</span>
+                                            </div>
+                                            <a href="#" class="remove__cart-item">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-trash"></use>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product__thumbnail">
+                                            <a href="#">
+                                                <img src="./images/products/sumsung/samsung5.jpeg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product__name">
+                                            <a href="#">Apple iPhone 11</a>
+                                            <br><br>
+                                            <small>White/6.25</small>
+                                        </td>
+                                        <td class="product__price">
+                                            <div class="price">
+                                                <span class="new__price">$250.99</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                        <svg>
+                                                            <use xlink:href="./images/sprite.svg#icon-minus"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                        <svg>
+                                                            <use xlink:href="./images/sprite.svg#icon-plus"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product__subtotal">
+                                            <div class="price">
+                                                <span class="new__price">$250.99</span>
+                                            </div>
+                                            <a href="#" class="remove__cart-item">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-trash"></use>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product__thumbnail">
+                                            <a href="#">
+                                                <img src="./images/products/sumsung/samsung2.jpeg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product__name">
+                                            <a href="#">Apple iPhone 11</a>
+                                            <br><br>
+                                            <small>White/6.25</small>
+                                        </td>
+                                        <td class="product__price">
+                                            <div class="price">
+                                                <span class="new__price">$250.99</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                        <svg>
+                                                            <use xlink:href="./images/sprite.svg#icon-minus"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                        <svg>
+                                                            <use xlink:href="./images/sprite.svg#icon-plus"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product__subtotal">
+                                            <div class="price">
+                                                <span class="new__price">$250.99</span>
+                                            </div>
+                                            <a href="#" class="remove__cart-item">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-trash"></use>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product__thumbnail">
+                                            <a href="#">
+                                                <img src="./images/products/iPhone/iphone4.jpeg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product__name">
+                                            <a href="#">Apple iPhone 11</a>
+                                            <br><br>
+                                            <small>White/6.25</small>
+                                        </td>
+                                        <td class="product__price">
+                                            <div class="price">
+                                                <span class="new__price">$250.99</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                        <svg>
+                                                            <use xlink:href="./images/sprite.svg#icon-minus"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                        <svg>
+                                                            <use xlink:href="./images/sprite.svg#icon-plus"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product__subtotal">
+                                            <div class="price">
+                                                <span class="new__price">$250.99</span>
+                                            </div>
+                                            <a href="#" class="remove__cart-item">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-trash"></use>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="cart-btns">
+                            <div class="continue__shopping">
+                                <a href="/">SEGUIR COMPRANDO</a>
+                            </div>
+                            <div class="check__shipping">
+                                <input type="checkbox">
+                                <span>Envío(+900$)</span>
+                            </div>
+                        </div>
+
+                        <div class="cart__totals">
+                            <h3>Totales del carrito</h3>
+                            <ul>
+                                <li>
+                                    Sub total
+                                    <span class="new__price">$250.99</span>
+                                </li>
+                                <li>
+                                    Envío
+                                    <span>$900</span>
+                                </li>
+                                <li>
+                                    Monto Total
+                                    <span class="new__price">$250.99</span>
+                                </li>
+                            </ul>
+                            <a href="">PROCEDER CON LA COMPRA</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facility Section -->
+        <section class="facility__section section" id="facility">
+            <div class="container">
+                <div class="facility__contianer" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="facility__box">
+                        <div class="facility-img__container">
+                            <svg>
+                        <use xlink:href="./images/sprite.svg#icon-airplane"></use>
+                      </svg>
+                        </div>
+                        <p>ENVIO GRATUITO</p>
+                    </div>
+
+                    <div class="facility__box">
+                        <div class="facility-img__container">
+                            <svg>
+                        <use xlink:href="./images/sprite.svg#icon-credit-card-alt"></use>
+                      </svg>
+                        </div>
+                        <p>GARANTÍA DE DEVOLUCIÓN DEL 100% DEL DINERO</p>
+                    </div>
+
+                    <div class="facility__box">
+                        <div class="facility-img__container">
+                            <svg>
+                        <use xlink:href="./images/sprite.svg#icon-credit-card"></use>
+                      </svg>
+                        </div>
+                        <p>TRABAJAMOS CON TODAS LAS TARJETAS</p>
+                    </div>
+
+                    <div class="facility__box">
+                        <div class="facility-img__container">
+                            <svg>
+                        <use xlink:href="./images/sprite.svg#icon-headphones"></use>
+                      </svg>
+                        </div>
+                        <p>SOPORTE EN LÍNEA 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer id="footer" class="section footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer-top__box">
+                    <h3>REDES SOCIALES</h3>
+                    <div>
+                        <span>
+                          <i class="fab fa-facebook-square"></i>
+                          
+                        </span>
+                        <a href="https://www.facebook.com/" id="link-redes">Facebook</a>
+                    </div>
+
+                    <div>
+                        <span>
+                          <i class="fab fa-instagram"></i>
+
+                    </span>
+                        <a href="https://www.instagram.com/" id="link-redes">Instagram</a>
+                    </div>
+                    <div>
+                        <span>
+                          <i class="fab fa-twitter-square"></i>
+                   </span>
+                        <a href="https://www.twitter.com/" id="link-redes">Twitter</a>
+                    </div>
+                    <div>
+                        <span>
+                          <i class="fab fa-youtube"></i>
+                        </span>
+                        <a href="https://www.youtube.com/" id="link-redes">Youtube</a>
+                    </div>
+                </div>
+                <div class="footer-top__box">
+                    <h3>¿DONDE ESTAMOS?</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.7769190032905!2d-58.208223485419!3d-26.203934170325304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945ca9ce01e2f681%3A0x3c5cdbf265631337!2sCJ%20Inform%C3%A1tica!5e0!3m2!1ses-419!2sar!4v1631243551260!5m2!1ses-419!2sar"
+                        width="250" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <!-- <h3>INFORMACION</h3>
+                    <a href="#">Sobre Nosotros</a>
+                    <a href="#">Politica y privacidad</a>
+                    <a href="#">termino y condiciones</a>
+                    <a href="#">Contactenos</a>
+                    <a href="#">Donde estamos</a> -->
+                </div>
+                <div class="footer-top__box">
+                    <h3>MI CUENTA</h3>
+                    <a href="#">Mi Cuenta</a>
+                    <a href="#">historia de pedidos</a>
+                    <a href="#">Lista de deseos</a>
+                    <a href="#">boletin informativo</a>
+                    <a href="#">Devoluciones</a>
+                </div>
+
+                <div class="footer-top__box">
+                    <h3>CONTACTENOS</h3>
+                    <div>
+                        <span>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-location"></use>
+                        </svg>
+                        </span> SANTA MARIA DE ORO 1506, BARRIO VILLA DE ROSARIO
+                    </div>
+                    <div>
+                        <span>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-envelop"></use>
+                        </svg>
+                        </span> CJINFORMATICA@gmail.com
+                    </div>
+                    <div>
+                        <span>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-phone"></use>
+                        </svg>
+                       </span> 3704824032
+                    </div>
+                    <div>
+                        <span>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-paperplane"></use>
+                        </svg>
+                        </span> FORMOSA CAPITAL, ARGENTINA
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer-bottom__box">
+
+            </div>
+            <div class="footer-bottom__box">
+
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Go To -->
+
+    <a href="#header" class="goto-top scroll-link">
+        <svg>
+            <use xlink:href="./images/sprite.svg#icon-arrow-up"></use>
+        </svg>
+    </a>
+
+    <!-- Glide Carousel Script -->
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="./js/products.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+
+</html>
